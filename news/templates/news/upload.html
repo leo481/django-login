@@ -1,0 +1,6 @@
+<form enctype="multipart/form-data" action="{% url 'news:up' %}" method="post">
+    {% csrf_token %}
+    {% comment %} <input type="file" name="myfile" id="up"><br> {% endcomment %}
+     {{ form.as_p }}<br>
+    <input type="submit" value="send">
+</form>
